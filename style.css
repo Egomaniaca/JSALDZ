@@ -1,6 +1,6 @@
 body{
     font-family: 'SF Pro Display', sans-serif;
-    
+    background-color:#e7e7e7;
 }
 header{
     display: flex;
@@ -10,6 +10,7 @@ header{
     padding: 30px 80px;
 }
 .goods-list {
+   
     margin-top: 40px;
     display: flex;
     justify-content: space-around;
