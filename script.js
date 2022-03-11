@@ -1,3 +1,5 @@
+
+
 const goods = [
     { title: 'Shirt', price: 150 },
     { title: 'Socks', price: 50 },
@@ -5,7 +7,7 @@ const goods = [
     { title: 'Shoes', price: 250 },
 ];
 
-const renderGoodsItem = (title = 111, price = 666) => `<div class="goods-item"><h3>${title}</h3><p>${price}</p></div>`;
+const renderGoodsItem = (title = 111, price = 666) => `<div class="goods-item"><div><img src="https://via.placeholder.com/200"></div><h3>${title}</h3><p>${price}</p></div>`;
 
 
 const renderGoodsList = (list) => {
