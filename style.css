@@ -59,3 +59,16 @@ header{
     -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 }
+
+.buy-btn {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 200px;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    background-color: #56b5b8;
+    color: #fafafa;
+    border: none;
+}
