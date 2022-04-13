@@ -4,18 +4,26 @@
     border: 0;
 }
 
+h1 {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 42pt;
+}
 
 body {
     font-family: 'SF Pro Display', sans-serif;
+    background-color: #e7e7e7;
 }
 
 header {
+
     height: 50px;
     display: flex;
     position: relative;
     justify-content: space-between;
     color: #fafafa;
-    padding: 30px 30px;
+    padding: 30px 80px;
     background: -webkit-linear-gradient(270deg, rgb(171, 221, 210), #56b5b8);
     background: -moz-linear-gradient(270deg, rgb(171, 221, 210), rgb(86, 181, 184));
     background: linear-gradient(270deg, rgb(171, 221, 210), rgb(86, 181, 184));
@@ -29,23 +37,16 @@ button:focus {
 
     text-transform: uppercase;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
-    font-size: 42pt;
 }
 
 .btn-cart {
-    z-index: 40;
-    padding: 10px;
+    background-color: #fafafa;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    color: #2f2a2d;
     border-radius: 5px;
-    margin: 8px;
-    position: absolute;
-    right: 20pt;
-    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-    background-color: #56b5b8;
-    color: #fafafa;
+    transition: all ease-in-out .4s;
+    cursor: pointer;
 }
 
 .btn-cart:hover {
@@ -59,6 +60,12 @@ button:focus {
     align-self: center;
 }
 
+/*.products {*/
+/*display: flex;*/
+/*justify-content: space-between;*/
+/*flex-wrap: wrap;*/
+/*padding: 40px 80px;*/
+/*}*/
 .products {
     column-gap: 30px;
     display: grid;
@@ -79,6 +86,7 @@ p {
     border-radius: 5px;
     overflow: hidden;
     margin: 20px 0;
+    background-color: #fafafa;
 }
 
 img {
@@ -88,13 +96,7 @@ img {
 
 .desc {
     border: 1px solid #c0c0c040;
-    padding: 15px;
-    background: -webkit-linear-gradient(45deg, rgb(220, 246, 240), rgb(200, 236, 236));
-    background: -moz-linear-gradient(45deg, rgb(220, 246, 240), rgb(200, 236, 236));
-    background: linear-gradient(45deg, rgb(220, 246, 240), rgb(200, 236, 236));
-    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    padding: 15px
 }
 
 .cart {
@@ -197,12 +199,11 @@ img {
     position: absolute;
     bottom: 5px;
     right: 0;
-
 }
 
 .search-form {
     position: relative;
-    margin-right: 150px;
+    margin-right: 50px;
     display: inline-block;
 }
 
