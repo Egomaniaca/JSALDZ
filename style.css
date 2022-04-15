@@ -60,12 +60,7 @@ button:focus {
     align-self: center;
 }
 
-/*.products {*/
-/*display: flex;*/
-/*justify-content: space-between;*/
-/*flex-wrap: wrap;*/
-/*padding: 40px 80px;*/
-/*}*/
+
 .products {
     column-gap: 30px;
     display: grid;
@@ -101,6 +96,7 @@ img {
 
 .cart {
     position: relative;
+    display: flex;
 }
 
 .cart-block {
@@ -205,6 +201,7 @@ img {
     position: relative;
     margin-right: 50px;
     display: inline-block;
+
 }
 
 .search-field:focus {

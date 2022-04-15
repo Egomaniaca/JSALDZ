@@ -15,14 +15,15 @@
         <header>
             <h1>eShop.com</h1>
             <div class="cart">
-                <form action="#" class="search-form" @submit.prevent="filter">
+                <!-- <form action="#" class="search-form" @submit.prevent="filter">
                     <input type="text" class="search-field" v-model="userSearch">
                     <button class="btn-search" type="submit">
                         <i class="fas fa-search"></i>
                     </button>
-                </form>
-                <button class="btn-cart" type="button" @click="showCart=!showCart">Корзина</button>
-                <div class="cart-block" v-show="showCart">
+                </form> -->
+                <filter_el></filter_el>
+                <!-- <button class="btn-cart" type="button" @click="showCart=!showCart">Корзина</button> -->
+                <!-- <div class="cart-block" v-show="showCart">
                     <p v-if="!cartItems.length">Корзина пуста</p>
                     <div class="cart-items" v-for="item of cartItems" :key="item.id_product">
                         <div class="product-bio">
@@ -38,12 +39,12 @@
                             <button class="del-btn" @click="remove(item)">&#10008</button>
                         </div>
                     </div>
-                </div>
-
+                </div> -->
+                <cart ref="cart"></cart>
             </div>
         </header>
         <main>
-            <div class="products">
+            <!-- <div class="products">
                 <div class="product-item" v-for="product of filtered" :key="product.id_product">
                     <img :src="imgCatalog" alt="Image">
                     <div class="desc">
@@ -52,10 +53,14 @@
                         <button class="buy-btn" @click="addProduct(product)">Купить</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
+            <products ref="products"></products>
         </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="SearchComp.js"></script>
+    <script src="CartComp.js"></script>
+    <script src="ProductComp.js"></script>
     <script defer src="script.js"></script>
 </body>
 
